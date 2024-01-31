@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recette de cuisine</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"  />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,16 +24,16 @@
   </head>
   <body>
     <header>
-      <div class="mv1320 m-auto d-flex jc-sb wrap ">
+      <div class="nav-bar">
       <nav>
-        <img class="logo" src="images/logo.svg" alt="logo" />
+        <a href="#"><img class="logo" src="images/logo.svg" alt="logo" height="50" /></a>
         <a href="#Accueil">Accueil</a>
-        <a href="#Recettes">Recettes</a>
+        <a href="#Recettes">Recettes <img class="arrow" src="images/arrow-down-s-fill.svg" alt="arrow"></a>
         <a href="Tendances">Tendances</a>
       </nav>
-       <form>
-        <input type="search">
-        <button>
+       <form action="" method="submit">
+        <input class="search-bar" type="text" name="search" placeholder="" votre recherche>
+        <button type="search">
         <img class="search-button" src="images/search-solid-white.svg" alt="search-button">
         </button>
        </form>
@@ -40,21 +41,17 @@
       
     </header>
 
-    <main class="d-flex">
-      <section class="big-contener">
+    <main>
+      <section class="section">
         <h1>Toutes nos recettes</h1>
-        <div class="contener">
+        <div class="article__contener">
           <article>
-            <img class="img-first" src="images/donuts.jpg" alt="burger" />
-            <div class="overlay"></div>
-           
-
+          <img class="article__img" src="images/donuts.jpg" alt="burger" />
             <h2 class="second-title">Nos Donuts</h2>
             <h4 class="third-title">
               difficulté
               <img class="star" src="images/star-fill.svg" alt="star" />
-              <img class="star" src="images/star-fill.svg" alt="star" />
-              <img class="star" src="images/star-fill.svg" alt="star" />
+            
             </h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
@@ -67,16 +64,16 @@
 
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/brooke-lark-pGM4sjt_BdQ-unsplash.jpg"
               alt="burger"
             />
-            <h2 class="second-title">Ab ea eius</h2>
+            <h2 class="second-title">Nos muffins</h2>
             <h4 class="third-title">
               difficulté
               <img class="star" src="images/star-fill.svg" alt="" />
               <img class="star" src="images/star-fill.svg" alt="" />
-              <img class="star" src="images/star-fill.svg" alt="" />
+              
             </h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
@@ -87,8 +84,8 @@
             <h4 class="four-title">En savoir plus</h4>
           </article>
           <article>
-            <img class="img-first" src="images/piquant.jpg" alt="burger" />
-            <h2 class="second-title">Ab ea eius</h2>
+            <img class="article__img" src="images/piquant.jpg" alt="burger" />
+            <h2 class="second-title">Nos bonbons qui piquent</h2>
             <h4 class="third-title">
               difficulté
               <img class="star" src="images/star-fill.svg" alt="" />
@@ -105,8 +102,8 @@
           </article>
 
           <article>
-            <img class="img-first" src="images/donut.jpg" alt="burger" />
-            <h2 class="second-title">Ab ea eius</h2>
+            <img class="article__img" src="images/donut.jpg" alt="burger" />
+            <h2 class="second-title">Donuts fraises</s></h2>
             <h4 class="third-title">
               difficulté
               <img class="star" src="images/star-fill.svg" alt="" />
@@ -124,11 +121,11 @@
 
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/tai-s-captures-Dl09VLx2JqM-unsplash (1).jpg"
               alt="burger"
             />
-            <h2 class="second-title">Ab ea eius</h2>
+            <h2 class="second-title">Licornes choco blanc</h2>
             <h4 class="third-title">
               difficulté
               <img class="star" src="images/star-fill.svg" alt="" />
@@ -145,16 +142,15 @@
           </article>
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/yes-and-studio-XVYz_QeiEBw-unsplash.jpg"
               alt="burger"
             />
-            <h2 class="second-title">Ab ea eius</h2>
+            <h2 class="second-title">Bonbons colorés</h2>
             <h4 class="third-title">
               difficulté
               <img class="star" src="images/star-fill.svg" alt="" />
-              <img class="star" src="images/star-fill.svg" alt="" />
-              <img class="star" src="images/star-fill.svg" alt="" />
+             
             </h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
@@ -167,7 +163,7 @@
 
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/alexander-grey-5djh4Yb-2zI-unsplash.jpg"
               alt="burger"
             />
@@ -189,7 +185,7 @@
 
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/paige-cody-iocdiS6jKx4-unsplash.jpg"
               alt="burger"
             />
@@ -198,7 +194,7 @@
               difficulté
               <img class="star" src="images/star-fill.svg" alt="" />
               <img class="star" src="images/star-fill.svg" alt="" />
-              <img class="star" src="images/star-fill.svg" alt="" />
+              
             </h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
@@ -210,7 +206,7 @@
           </article>
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/aneta-voborilova-mlcm6qi9Bu8-unsplash.jpg"
               alt="burger"
             />
@@ -218,8 +214,7 @@
             <h4 class="third-title">
               difficulté
               <img class="star" src="images/star-fill.svg" alt="star" />
-              <img class="star" src="images/star-fill.svg" alt="star" />
-              <img class="star" src="images/star-fill.svg" alt="star" />
+         
             </h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
@@ -232,7 +227,7 @@
 
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/jennie-brown-MKBoRZEGeiM-unsplash.jpg"
               alt="burger"
             />
@@ -254,7 +249,7 @@
 
           <article>
             <img
-              class="img-first"
+              class="article__img"
               src="images/aneta-voborilova-mlcm6qi9Bu8-unsplash.jpg"
               alt="burger"
             />
@@ -275,7 +270,7 @@
             <h4 class="four-title">En savoir plus</h4>
           </article>
           <article>
-            <img class="img-first" src="images/donuts.jpg" alt="burger" />
+            <img class="article__img" src="images/donuts.jpg" alt="burger" />
             <h2 class="second-title">Ab ea eius</h2>
             <h4 class="third-title">
               difficulté
@@ -308,9 +303,9 @@
         </div>
         <div class="follow">
           <h2>Suivez-nous</h2>
-          <img class="star" src="images/star-fill.svg" alt="star" />
-          <img class="star" src="images/star-fill.svg" alt="star" />
-          <img class="star" src="images/star-fill.svg" alt="star" />
+          <img class="containerfooter__icon" src="images/facebook-circle-fill.svg" alt="Facebook" />
+          <img class="containerfooter__icon" src="images/instagram-fill (3).svg" alt="Instagram" />
+          <img class="containerfooter__icon" src="images/twitter-fill.svg" alt="Twitter" />
         </div>
         <div class="Subscribe">
           <h2>Abonnez-vous à notre Newsletters</h2>

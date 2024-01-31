@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="registrer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&family=Roboto&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__navbar m-v1320 d-flex">
+        <nav>
+          <a href="#"
+            ><img src="images/logo.svg" alt="logo" height="50"
+          /></a>
+          <a href="#Accueil">Accueil</a>
+          <a href="#Recettes"
+            >Recettes
+            <img class="header__arrow" src="images/arrow-down-s-fill.svg" alt="arrow"
+          /></a>
+          <a href="Tendances">Tendances</a>
+        </nav>
+        <form action="" method="submit">
+          <input
+            class="header__searchbar"
+            type="text"
+            name="search"
+            placeholder=""
+            votre
+            recherche
+          />
+          <button type="search">
+            <img
+              class="header__searchbutton"
+              src="images/search-solid-white.svg"
+              alt="search-button"
+            />
+          </button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="containerformimg m-v1320 d-flex wrap">
+        <img class="containerform__img" src="images/glace.jpg" alt="Logo" />
+        <div class="containerform__form">
+          <h2 class="containerform__signup">Sign Up</h2>
+          <p class="containerform__access">Get full access</p>
+          <form>
+            <label class="containerform__label d-flex" for="firstName"></label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Fisrt Name"
+              required
+            />
+
+            <label class="containerform__label d-flex"  for="lastName"></label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+
+            <label class="containerform__label d-flex" for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <label class="containerform__label d-flex" for="password"></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+
+            <label class="containerform__label d-flex" for="confirmPassword"></label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="ConfirmPassword"
+              required
+            />
+
+            <label class="containerform__label d-flex" for="phone"></label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" />
+
+            <button type="submit">Register Now</button>
+          </form>
+
+          <p class="containerform__link">
+            Already have an account? <a href="#">Login</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer-img"></div>
+  
+        <div class="containerfooter d-flex">
+          <div>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Recettes</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Politiques de confidentialités</a></li>
+            </ul>
+          </div>
+          <div class="containerfooter__follow">
+            <h2>Suivez-nous</h2>
+            <img class="containerfooter__icon" src="images/facebook-circle-fill.svg" alt="Facebook" />
+            <img class="containerfooter__icon" src="images/instagram-fill (3).svg" alt="Instagram" />
+            <img class="containerfooter__icon" src="images/twitter-fill.svg" alt="Twitter" />
+          </div>
+          <div class="Subscribe">
+            <h2>Abonnez-vous à notre Newsletters</h2>
+  
+            <label class="d-flex" for="email">E-mail :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="email"
+              required
+              placeholder="Entrez votre e-mail"
+              onclick="expandSearch()"
+            />
+  
+            <label class="d-flex">
+              <input type="checkbox" name="subscribe" /> Je souhaite m'abonner
+            </label>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div class="copieright">2022 MODE 83</div>
+      </footer>
+  </body>
+
+</html>

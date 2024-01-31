@@ -1,54 +1,77 @@
 * {
-    margin: 0%;
-    box-sizing: border-box;
-  }
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e2bcda;
+  padding: 30px;
+  margin-bottom: 30px;
+  min-height: 20px;
+}
+
+.arrow {
+  width: 15px;
+}
+
+.navbar {
+
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+}
+.searchcontainer{
+width: 20%;
+
+}
+
+.search__bar {
+  border-radius: 8px;
+ 
+}
+
+.search__button {
+  width: 10px;
+  height: 10px;
+}
+
+.search__buttonprofil{
+  width: 20px;
+}
+
+.m-v1320 {    /* classe utilitaire max-whidth 1320px  */
+  max-width: 1320px;
   
-  .header {
-    background-color: #e2bcda;
-    padding: 30px;
-    margin-bottom: 30px;
-    min-height: 20px;
-   
-  }
-  
-  .header__arrow{
-    width: 15px;
-  }
-  
-.header__navbar{
-    
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
-  }
-  
-  
-  
-  nav a {
-    text-decoration: none;
-    padding: 15px;
-    color: white;
-  
-   
-  }
-  
-  
-  .header__searchbar {
-    border-radius: 8px;
-    
-  
-  }
-  
-.header__searchbutton {
-    width: 10px;
-  }
+}
+
+
+.d-flex {  /* classe utilitaire display flex  */
+  display: flex;
+}
+
+
+.wrap {  /* classe utilitaire flex-wrap  */
+  flex-wrap: wrap;
+}
+
+
+/*fin header*/
+
 
 .containerformimg { /*Formulaire parent*/
  
     margin: auto;
     background-color: #fff;
     border-radius: 8px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
     
 
     
@@ -74,13 +97,16 @@
     font-family:  'Comfortaa', sans-serif;
 }
 
+form{
+  width: 600px;
+}
 
 
 .containerform__label {
   margin-bottom: 8px;
 }
 
-form input {
+.containerform__input {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -89,7 +115,7 @@ form input {
     border-radius: 4px;
 }
 
-form button {
+.containerform__button {
     background-color: #4caf50;
     color: #fff;
     padding: 10px 15px;
@@ -173,17 +199,4 @@ form button:hover {
   }
   
 
-  .m-v1320 {    /* classe utilitaire max-whidth 1320px  */
-    max-width: 1320px;
-    
-  }
   
-
-  .d-flex {  /* classe utilitaire display flex  */
-    display: flex;
-  }
-
-
-  .wrap {  /* classe utilitaire flex-wrap  */
-    flex-wrap: wrap;
-  }

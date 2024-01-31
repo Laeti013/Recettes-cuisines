@@ -22,47 +22,56 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header__navbar m-v1320 d-flex">
+    <header>
+      <div class="navbar d-flex m-v1320">
         <nav>
-          <a href="#"
-            ><img src="images/logo.svg" alt="logo" height="50"
+          <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo" height="50"
           /></a>
           <a href="#Accueil">Accueil</a>
           <a href="#Recettes"
             >Recettes
-            <img class="header__arrow" src="images/arrow-down-s-fill.svg" alt="arrow"
+            <img class="arrow" src="images/arrow-down-s-fill.svg" alt="arrow"
           /></a>
           <a href="Tendances">Tendances</a>
         </nav>
-        <form action="" method="submit">
-          <input
-            class="header__searchbar"
-            type="text"
-            name="search"
-            placeholder=""
-            votre
-            recherche
-          />
-          <button type="search">
-            <img
-              class="header__searchbutton"
-              src="images/search-solid-white.svg"
-              alt="search-button"
+        <div class="searchcontainer">
+          <form class="d-flex" action="" method="submit">
+            <input
+              class="d-flex search__bar"
+              type="text"
+              name="search"
+              placeholder=""
+              votre
+              recherche
             />
-          </button>
-        </form>
+
+            <a href="#"
+              ><img
+                class="search__button"
+                src="images/search-solid-white.svg"
+                alt="search-button"
+            /></a>
+            <a href="registrer.html"
+              ><img
+                class="search__buttonprofil"
+                src="images/user-fill.svg"
+                alt="user"
+            /></a>
+          </form>
+        </div>
       </div>
     </header>
+    <!--fin du header-->
     <main>
       <div class="containerformimg m-v1320 d-flex wrap">
         <img class="containerform__img" src="images/glace.jpg" alt="Logo" />
         <div class="containerform__form">
           <h2 class="containerform__signup">Sign Up</h2>
           <p class="containerform__access">Get full access</p>
-          <form>
+          <form class="form">
             <label class="containerform__label d-flex" for="firstName"></label>
             <input
+              class="containerform__input"
               type="text"
               id="firstName"
               name="firstName"
@@ -70,8 +79,9 @@
               required
             />
 
-            <label class="containerform__label d-flex"  for="lastName"></label>
+            <label class="containerform__label d-flex" for="lastName"></label>
             <input
+              class="containerform__input"
               type="text"
               id="lastName"
               name="lastName"
@@ -81,6 +91,7 @@
 
             <label class="containerform__label d-flex" for="email"></label>
             <input
+              class="containerform__input"
               type="email"
               id="email"
               name="email"
@@ -90,6 +101,7 @@
 
             <label class="containerform__label d-flex" for="password"></label>
             <input
+              class="containerform__input"
               type="password"
               id="password"
               name="password"
@@ -97,8 +109,12 @@
               required
             />
 
-            <label class="containerform__label d-flex" for="confirmPassword"></label>
+            <label
+              class="containerform__label d-flex"
+              for="confirmPassword"
+            ></label>
             <input
+              class="containerform__input"
               type="password"
               id="confirmPassword"
               name="confirmPassword"
@@ -107,9 +123,17 @@
             />
 
             <label class="containerform__label d-flex" for="phone"></label>
-            <input type="tel" id="phone" name="phone" placeholder="Phone" />
+            <input
+              class="containerform__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+            />
 
-            <button type="submit">Register Now</button>
+            <button class="containerform__button" type="submit">
+              Register Now
+            </button>
           </form>
 
           <p class="containerform__link">
@@ -119,45 +143,56 @@
       </div>
     </main>
     <footer>
-        <div class="footer-img"></div>
-  
-        <div class="containerfooter d-flex">
-          <div>
-            <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">Recettes</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Politiques de confidentialités</a></li>
-            </ul>
-          </div>
-          <div class="containerfooter__follow">
-            <h2>Suivez-nous</h2>
-            <img class="containerfooter__icon" src="images/facebook-circle-fill.svg" alt="Facebook" />
-            <img class="containerfooter__icon" src="images/instagram-fill (3).svg" alt="Instagram" />
-            <img class="containerfooter__icon" src="images/twitter-fill.svg" alt="Twitter" />
-          </div>
-          <div class="Subscribe">
-            <h2>Abonnez-vous à notre Newsletters</h2>
-  
-            <label class="d-flex" for="email">E-mail :</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="email"
-              required
-              placeholder="Entrez votre e-mail"
-              onclick="expandSearch()"
-            />
-  
-            <label class="d-flex">
-              <input type="checkbox" name="subscribe" /> Je souhaite m'abonner
-            </label>
-          </div>
-        </div>
-        <div class="border"></div>
-        <div class="copieright">2022 MODE 83</div>
-      </footer>
-  </body>
+      <div class="footer-img"></div>
 
+      <div class="containerfooter d-flex">
+        <div>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Recettes</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Politiques de confidentialités</a></li>
+          </ul>
+        </div>
+        <div class="containerfooter__follow">
+          <h2>Suivez-nous</h2>
+          <img
+            class="containerfooter__icon"
+            src="images/facebook-circle-fill.svg"
+            alt="Facebook"
+          />
+          <img
+            class="containerfooter__icon"
+            src="images/instagram-fill (3).svg"
+            alt="Instagram"
+          />
+          <img
+            class="containerfooter__icon"
+            src="images/twitter-fill.svg"
+            alt="Twitter"
+          />
+        </div>
+        <div class="Subscribe">
+          <h2>Abonnez-vous à notre Newsletters</h2>
+
+          <label class="d-flex" for="email">E-mail :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="email"
+            required
+            placeholder="Entrez votre e-mail"
+            onclick="expandSearch()"
+          />
+
+          <label class="d-flex">
+            <input type="checkbox" name="subscribe" /> Je souhaite m'abonner
+          </label>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="copieright">2022 MODE 83</div>
+    </footer>
+  </body>
 </html>
